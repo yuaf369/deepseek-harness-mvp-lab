@@ -1,0 +1,26 @@
+{
+    "name":"cordis-mvp",
+    "version":"0.1.0",
+    "private":true,
+    "type": "module",
+    "description": "基于Cordis的插件化命令行Agent教学MVP",
+    "engines": {
+        "node": ">=22.19.0"
+    },
+    "scripts": {
+        "dev":"tsx src/cli.ts",
+        "demo":"tsx src/cli.ts --demo",
+        "test":"tsx --test tests/*.test.ts",
+        "typecheck":"tsc --noEmit",
+        "build":"tsc -p tsconfig.build.json",
+        "start": "node dist/cli.js"
+    },
+    "dependencies": {
+        "cordis":"4.0.0-rc.10"
+    },
+    "devDependencies": {
+        "@types/node": "22.20.2",
+        "tsx":"4.23.13",
+        "typescript":"5.9.3"
+    }
+}
